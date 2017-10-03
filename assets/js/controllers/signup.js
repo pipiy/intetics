@@ -3,8 +3,6 @@ app.controller("SignUpController", ['$scope', function($scope) {
     debugger;
     if ($scope.myForm.$valid) {
       window.location.href = "signin.html";
-    } else {
-      $scope.error = true;
     }
   };
 }]);

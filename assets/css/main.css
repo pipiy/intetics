@@ -55,3 +55,9 @@
 .bg-danger {
   padding: 15px;
 }
+.navbar .text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  float:left;
+  font-weight: bold;
+}

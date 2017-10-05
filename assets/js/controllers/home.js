@@ -8,7 +8,7 @@ app.controller("HomeController", ['$scope', function($scope) {
     {id: 6, src: "", name: "Woman"},
     {id: 7, src: "", name: "Computer"},
     {id: 8, src: "", name: "Work"},
-    {id: 9, src: "", name: "CIty"},
+    {id: 9, src: "", name: "City"},
     {id: 10, src: "", name: "Nature"},
     {id: 11, src: "", name: "Nature"},
     {id: 12, src: "", name: "Business"},
@@ -30,5 +30,20 @@ app.controller("HomeController", ['$scope', function($scope) {
     {id: 28, src: "", name: "Business"},
     {id: 29, src: "", name: "Animals"},
     {id: 30, src: "", name: "Animals"}
-  ]
+  ];
+  $( function() {
+    var availableTags = [
+      "Man",
+      "Computer",
+      "Woman",
+      "Work",
+      "City",
+      "Nature",
+      "Business",
+      "Animals"
+    ];
+    $( "#searchbar" ).autocomplete({
+      source: availableTags
+    });
+  } );
 }]);

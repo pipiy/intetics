@@ -1,1 +1,1 @@
-var app = angular.module("application", [])
+var app = angular.module("application", ['infinite-scroll'])

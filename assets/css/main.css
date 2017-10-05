@@ -62,7 +62,7 @@
   font-weight: 500;
 }
 .search {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .search .left-menu {
   width: 78%;
@@ -71,4 +71,11 @@
 .search .right-menu button {
   float: right;
   width: 20%;
+}
+.filter {
+  padding-bottom: 15px;
+}
+.filter a {
+  padding-left: 20px;
+  text-decoration: underline;
 }

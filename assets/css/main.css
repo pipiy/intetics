@@ -55,9 +55,20 @@
 .bg-danger {
   padding: 15px;
 }
-.navbar .text {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  float:left;
-  font-weight: bold;
+.navbar-nav .navbar-text {
+  padding: 0px 12px;
+  font-size: 15px;
+  color: black;
+  font-weight: 500;
+}
+.search {
+  padding-bottom: 50px;
+}
+.search .left-menu {
+  width: 78%;
+  float: left;
+}
+.search .right-menu button {
+  float: right;
+  width: 20%;
 }

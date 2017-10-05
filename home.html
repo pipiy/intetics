@@ -59,7 +59,7 @@
                 <input type="seachbar" class="form-control" id="searchbar" placeholder="Search here" ng-model="searchByKeyword">
               </div>
               <div class="right-menu">
-                <button class="btn btn-primary">Search by keyword</button>
+                <button class="btn btn-primary" ng-click="filterSearch = searchByKeyword">Search by keyword</button>
               </div>
             </div>
           </form>
@@ -84,7 +84,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 hero-feature" ng-repeat="image in images | filter:myFilter| filter:searchByKeyword">
+            <div class="col-md-3 col-sm-6 hero-feature" ng-repeat="image in images | filter:myFilter| filter:filterSearch">
               <div class="thumbnail">
                 <img src="{{image.src}}" alt="">
                 <div class="caption">

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -56,16 +55,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <form class="search">
-            <div class="form-group">
-              <div class="left-menu ui-widget">
-                <input type="seachbar" class="form-control" id="searchbar" placeholder="Search here" ng-model="searchByKeyword">
+          <div class="ui-widget">
+            <form class="search">
+              <div class="form-group">
+                <div class="left-menu">
+                  <input type="seachbar" class="form-control" id="searchbar" placeholder="Search here" ng-model="searchByKeyword">
+                </div>
+                <div class="right-menu">
+                  <button class="btn btn-primary" ng-click="filterSearch = searchByKeyword">Search by keyword</button>
+                </div>
               </div>
-              <div class="right-menu">
-                <button class="btn btn-primary" ng-click="filterSearch = searchByKeyword">Search by keyword</button>
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
 
           <div class="filter">
             <p>e.g. <a href="" ng-click="myFilter = {}">all</a> <a href="" ng-click="myFilter = {name: 'Computer'}">computer</a> <a href="" ng-click="myFilter = {name: 'Woman'}">woman</a>

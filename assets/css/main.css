@@ -114,3 +114,6 @@
     padding-left: 10px;
     padding-top: 10px;
 }
+.ui-helper-hidden-accessible {
+  display: none;
+}

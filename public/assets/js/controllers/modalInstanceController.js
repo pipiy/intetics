@@ -10,7 +10,6 @@ app.controller('ModalInstanceCtrl', ['$scope', '$uibModalInstance', function ($s
   }
 
   $scope.ok = function () {
-    debugger;
     $uibModalInstance.close({ name: $scope.name, tags: $scope.tags, description: $scope.description, src: "assets/images/grid-1.jpg"});
   };
 }]);

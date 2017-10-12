@@ -1,5 +1,4 @@
-app.controller('ModalInstanceCtrl', ['$scope', '$uibModalInstance', function ($scope, $uibModalInstance, images) {
-  $scope.images = images;
+app.controller('ModalInstanceCtrl', ['$scope', '$uibModalInstance', function ($scope, $uibModalInstance) {
   $scope.tags = [];
   $scope.addTag = function() {
     $scope.tags.push($scope.tag);

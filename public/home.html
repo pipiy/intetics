@@ -94,7 +94,7 @@
             </div>
             <div class="col-md-3 col-sm-6 hero-feature" ng-repeat="image in images | filter:myFilter| filter:filterSearch" infinite-scroll="myPagingFunction()">
               <div class="thumbnail">
-                <img src="{{image.src}}" alt="name">
+                <img src="{{image.src}}" alt="{{image.name}}">
               </div>
             </div>
           </div>

@@ -31,20 +31,12 @@ app.controller("HomeController", ['$scope', '$uibModal', '$document', function($
     {src: "assets/images/grid-2.jpg", tags: "Woman", name: "", description: ""},
     {src: "assets/images/grid-3.jpg", tags: "Woman", name: "", description: ""},
     {src: "assets/images/grid-4.jpg", tags: "Computer", name: "", description: ""},
-    {src: "assets/images/grid-5.jpg", tags: "Work", name: "", description: ""}
+    {src: "assets/images/grid-5.jpg", tags: "Work", name: "", description: ""},
   ];
 
   $scope.images = _.map($scope.images, function(attributes) {
 		return new Image(attributes);
 	});
-
-  $(function() {
-    for (var i=0; i<=$scope.images.length; i++) {
-      if (i <= 19) {
-        $(".thumbnail").css("display: none")
-      }
-    }
-  });
 
   $(function() {
     var availableTags = [
@@ -61,12 +53,13 @@ app.controller("HomeController", ['$scope', '$uibModal', '$document', function($
       source: availableTags
     });
   });
-  $scope.loading = true;
+  $scope.loading = false;
   $scope.scrollToEndWindow = function(dir) {
+    debugger
     if (dir === "bottom") {
-      for (var i=0;  i<=$scope.images.length; i++) {
-        i.id
-      }
+      setTimeout(function() {
+        $scope.loading = true;
+      }, 100);
     }
   };
 
